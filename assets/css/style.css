@@ -1,0 +1,221 @@
+/* 
+
+Project Name: HTML Project Name
+Author: Shamim Ahmed
+Version: 1.0
+Company: PixCafe Network
+Description: html5 responsive template.
+
+=================
+TABLE OF INDEX
+=================
+
+01.
+
+*/
+
+/* Variable */
+:root{
+    --primary: #f15724;
+    --secondary: #202b31;
+    --montserrat: "Montserrat";
+}
+/* Default */
+body{
+    font-family: var(--montserrat);
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+/* Header Top Area */
+.leaven__header_top_area{
+    background-color: var(--secondary);
+    color: #fff;
+    padding: 18px 0;
+    font-size: 14px;
+}
+.leaven__header_top_area a{
+    color: #fff;
+}
+.leaven__header_top_area a:hover{
+    color: var(--primary);
+}
+.leaven__header_top_area i{
+    margin-right: 7px;
+}
+.leaven__header_top_area ul li{
+    display: inline-block;
+}
+.leaven__top_left_content ul li{
+    margin-right: 10px;
+    font-weight: 300;
+}
+
+/* Header Top Right Content */
+.leaven__top_right_content {
+  display: flex;
+  justify-content: space-between;
+}
+.leaven__social_media ul li{
+    margin: 0 4px;
+}
+.leaven__social_media ul li a{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    color: var(--secondary);
+    border-radius: 50%;
+    text-align: center;
+}
+.leaven__social_media ul li a:hover{
+    background-color: var(--primary);
+    color: #fff;
+}
+.leaven__social_media ul li a i{
+    display: block;
+    line-height: 25px;
+    margin: 0;
+}
+.leaven__site_meta ul li{
+    margin: 0px 5px;
+    position: relative;
+}
+.leaven__site_meta ul li:last-child{
+    margin-right: 0;
+    margin-left: 10px;
+}
+.leaven__site_meta ul li:last-child span{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    font-size: 80%;
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    top: -4px;
+    right: -8px;
+}
+
+/* 
+02. Header area
+*/
+.leaven__header_area {
+  padding: 25px;
+}
+/* logo */
+.leaven__logo h1 {
+  color: var(--secondary);
+  font-family: var(--mont);
+}
+.leaven__logo h1 span {
+  color: var(--primary);
+}
+/* memu */
+.leaven__mainmenu nav ul {
+  text-align: center;
+}
+.leaven__mainmenu nav ul li {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.leaven__mainmenu nav ul li a {
+  display: block;
+  color: var(--secondary);
+  padding: 4px 13px;
+  font-family: var(--montserrat);
+}
+/* Dropdown */
+.leaven__mainmenu nav ul li ul {
+  position: absolute;
+  left: 0;
+  top: 120%;
+  width: 250px;
+  background-color: var(--secondary);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px #202b3181;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
+  transition: all 0.4s ease;
+}
+.leaven__mainmenu nav ul li span {
+  display: block;
+  position: relative;
+  right: 5px;
+  transition: all 0.4s ease;
+}
+.leaven__mainmenu nav ul li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+}
+.leaven__mainmenu nav ul li ul li {
+  display: block;
+  text-align: left;
+  font-size: 90%;
+}
+.leaven__mainmenu nav ul li ul li a {
+  color: #fff;
+}
+.leaven__mainmenu nav ul li:hover a,
+.leaven__mainmenu nav ul li:hover ul li a:hover,
+.leaven__mainmenu nav ul li:hover span {
+  color: var(--primary);
+}
+.leaven__mainmenu nav ul li:hover ul li a {
+  color: #fff;
+}
+/* search Box */
+.leaven__search_box form {
+  display: flex;
+  justify-content: flex-end;
+}
+.leaven__search_box form input {
+  border: 1px solid var(--primary);
+  padding: 4px 10px;
+  border-radius: 7px 0 0 7px;
+}
+.leaven__search_box form input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.leaven__search_box form button {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 0 10px;
+  color: #fff;
+  border-radius: 0 7px 7px 0;
+  transition: all 0.4s ease;
+}
+.leaven__search_box form button:hover {
+  background-color: transparent;
+  color: var(--secondary);
+}
+
+/* Footer Area */
+
+.leaven__footer_area{
+    background-color: var(--primary);
+    color: #fff;
+    padding: 18px 0;
+    text-align: center;
+}
+.leaven__footer_content ul li {
+	font-size: 18px;
+}
+.leaven__footer_content ul span {
+	font-size: 15px;
+}
